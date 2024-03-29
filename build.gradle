@@ -1,0 +1,49 @@
+plugins {
+  id 'java-library'
+  id 'maven-publish'
+}
+
+ext {
+  grupo   = 'es.mde'
+  nombre  = 'mipapeleria-libreria'
+  version = '1.1.0'
+}
+
+publishing {
+  publications {
+    maven(MavenPublication) {
+      pom {
+        name = nombre
+        description = 'Libreria para la gestion de una papeleria (clientes, libros, cuadernos, etc...)'
+        url = "https://github.com/acingspring/$nombre"
+        licenses {
+          license {
+            name = 'The 3-Clause BSD License'
+            url = 'https://opensource.org/license/BSD-3-clause'
+          }
+        }
+        developers {
+          developer {
+            id = 'joseluispuentes82'
+            name = 'joseluispuentes82 (github)'
+            email = 'joseluispuentes@hotmail.com'
+          }
+        }
+      }
+      groupId    = grupo
+      artifactId = nombre
+      version    = version
+
+      from components.java
+    }
+  }
+}
+
+repositories {
+  mavenCentral()
+  maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+  api 'com.github.LanyuEStudio:lanyu-commons:1.1.0'
+}
