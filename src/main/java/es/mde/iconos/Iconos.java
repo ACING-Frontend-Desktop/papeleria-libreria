@@ -36,16 +36,16 @@ public class Iconos {
 						iconosSeparados1[i*columnas + j] = aux1.getSubimage(j*altoIcono, i*anchoIcono, anchoIcono, altoIcono);
 					}
 				}
-				EDITAR_LIBRO = iconosSeparados1[0];
-				EDITAR_USUARIO = iconosSeparados1[1];
-				ELIMINAR_LIBRO = iconosSeparados1[2];
-				ELIMINAR_USUARIO = iconosSeparados1[3];
-				EMAIL = iconosSeparados1[4];
-				LIBRO = iconosSeparados1[5];
-				LIBROS = iconosSeparados1[6];
-				USUARIO = iconosSeparados1[7];
-				USUARIOS = iconosSeparados1[8];
-				CUADERNO = iconosSeparados1[9];
+				USUARIO = iconosSeparados1[0];
+				USUARIOS = iconosSeparados1[1];
+				CUADERNO = iconosSeparados1[2];
+				EDITAR_LIBRO = iconosSeparados1[3];
+				EDITAR_USUARIO = iconosSeparados1[4];
+				ELIMINAR_LIBRO = iconosSeparados1[5];
+				ELIMINAR_USUARIO = iconosSeparados1[6];
+				EMAIL = iconosSeparados1[7];
+				LIBRO = iconosSeparados1[8];
+				LIBROS = iconosSeparados1[9];
 				
 			}
 			else
